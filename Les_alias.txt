@@ -1,0 +1,20 @@
+Les alias
+Il est possible de créer ses propres commandes Git
+
+Ces commandes peuvent-être des raccourcis vers des commandes Git existantes ou bien des scripts entiers
+
+La création d'un alias a consiste en l'ajout d'une configuration alias.a dans le fichier de configuration
+
+Par exemple la commande git log --graph --oneline --decorate utilisée pourvisualiser les commits peut-être crée sous une forme plus succincte
+
+
+$ git config --global alias.glog 'log --graph --oneline --decorate'
+$ git glog
+* b3d9655 (HEAD, tag: firstTag, remote/master, master) Merge branch
+'secondBranch'
+|\
+| * dc1ce86 Foo bar modification
+* | 7cc6ab3 A relevant message
+* | a5805c0 Second commit
+|/
+* 64bf0dd First commit
